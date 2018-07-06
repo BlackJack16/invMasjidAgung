@@ -101,7 +101,7 @@ if($_SESSION['hak_akses']!="Admin"){
 						<li><a href="home-admin.php?page=form-master-inventaris"> <i class="fa fa-caret-right"></i> Lokasi Inventaris</a></li>
 					</ul>
 				</li>
-				<li class="treeview"><a href="#"><i class="fa fa-bar-chart-o"></i> <span> Barang</span><i class="fa fa-angle-left pull-right"></i></a>
+				<li class="treeview"><a href="#"><i class="fa fa-briefcase""></i> <span> Barang</span><i class="fa fa-angle-left pull-right"></i></a>
 					<ul class="treeview-menu">
 						<li><a href="home-admin.php?page=form-barang-gudang"> <i class="fa fa-caret-right"></i> Stok Barang Digudang</a></li>
 						<li><a href="home-admin.php?page=form-barang-keluar"> <i class="fa fa-caret-right"></i> Barang Keluar</a></li>
@@ -110,7 +110,7 @@ if($_SESSION['hak_akses']!="Admin"){
 						
 					</ul>
 				</li>
-				<!-- <li class="treeview"><a href="home-admin.php"><i class="fa fa-info"></i> <span>Laporan</span></i></a></li> -->
+				<li class="treeview"><a href="home-admin.php?page=grafik"> <i class="fa fa-bar-chart-o"></i><span> Grafik</span></a></li>
 				
 
 			</ul>
@@ -164,6 +164,7 @@ if($_SESSION['hak_akses']!="Admin"){
 					case 'delete-data-pegawai': include "pages/master/delete-data-pegawai.php"; break;
 					case 'edit-data-pegawai': include "pages/master/edit-data-pegawai.php"; break;
 					case 'form-lihat-data-pegawai': include "pages/master/form-lihat-data-pegawai.php"; break;
+					case 'grafik': include "pages/master/page-grafik.php"; break;
 					default : include 'dashboard.php';	
 				}
 			?>

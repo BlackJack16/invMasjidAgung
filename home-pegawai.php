@@ -101,6 +101,7 @@ if($_SESSION['hak_akses']!="User"){
 					</ul>
 				</li>
 				<!-- <li class="treeview"><a href="home-pegawai.php"><i class="fa fa-exchange"></i> <span>Laporan</span></a></li> -->
+				<li class="treeview"><a href="home-pegawai.php?page=grafik"><i class="fa fa-bar-chart-o"></i> <span>grafik</span></i></a></li>
 			</ul>
 		</section>
 	</aside>
@@ -123,6 +124,7 @@ if($_SESSION['hak_akses']!="User"){
           case 'proses-pengajuan-pergantian-barang': include "pages/barang/proses-pengajuan-pergantian-barang.php"; break;  
           case 'form-edit-masa-pakai': include "pages/barang/form-edit-masa-pakai.php"; break;  
           case 'act-edit-masa-pakai': include "pages/barang/act-edit-masa-pakai.php"; break;  
+          case 'grafik': include "pages/master/page-grafik.php"; break;
 		  
           default : include 'dashboard-pegawai.php';	
 				}

@@ -104,6 +104,7 @@ if($_SESSION['hak_akses']!="Kepala"){
 					</ul>
 				</li>
 				<!-- <li class="treeview"><a href="home-kepala.php"><i class="fa fa-exchange"></i> <span>Laporan</span></a></li> -->
+				<li class="treeview"><a href="home-kepala.php?page=grafik"><i class="fa fa-bar-chart-o"></i> <span>grafik</span></i></a></li>
 			</ul>
 		</section>
 	</aside>
@@ -125,7 +126,8 @@ if($_SESSION['hak_akses']!="Kepala"){
 					case 'laporan-barang-keluar': include "pages/laporan/laporan-barang-keluar.php"; break;
 					case 'laporan-pengajuan-barang': include "pages/laporan/laporan-pengajuan-barang.php"; break;
 					case 'laporan-pergantian-barang': include "pages/laporan/laporan-pergantian-barang.php"; break;
-					case 'laporan-pdf': include "pages/laporan/laporan.php"; break; 
+					case 'laporan-pdf': include "pages/laporan/laporan.php"; break;
+					case 'grafik': include "pages/master/page-grafik.php"; break; 
        
           default : include 'dashboard-kepala.php';	
 				}
